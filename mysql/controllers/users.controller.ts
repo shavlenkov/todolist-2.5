@@ -8,7 +8,6 @@ import connect from '../database/connect';
 import {RowDataPacket} from "mysql2";
 import {User} from "../interfaces/User";
 
-
 export async function login(req: Request, res: Response) {
     try {
 
@@ -31,7 +30,7 @@ export async function login(req: Request, res: Response) {
         }
 
     } catch(e) {
-        res.status(500).send({"error": "Internal Server Error"})
+        return res.status(500).send({"error": "Internal Server Error"})
     }
 }
 
@@ -52,7 +51,7 @@ export async function register(req: Request, res: Response) {
 
         res.send({"ok": true})
     } catch(e) {
-        res.status(500).send({"error": "Internal Server Error"})
+        return res.status(500).send({"error": "Internal Server Error"})
     }
 }
 
