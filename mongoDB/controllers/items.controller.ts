@@ -23,7 +23,7 @@ export async function getItems(req: Request, res: Response) {
         res.send({"items": items})
 
     } catch(e) {
-        res.status(500).send({"error": "Internal Server Error"})
+        return res.status(500).send({"error": "Internal Server Error"})
     }
 }
 
@@ -48,7 +48,7 @@ export async function addItem(req: Request, res: Response) {
         res.send({_id: item._id})
 
     } catch(e) {
-        res.status(500).send({"error": "Internal Server Error"})
+        return res.status(500).send({"error": "Internal Server Error"})
     }
 }
 
@@ -90,6 +90,6 @@ export async function editItem(req: Request, res: Response) {
 
         res.send({"ok": true})
     } catch(e) {
-        res.status(500).send({"error": "Internal Server Error"})
+        return res.status(500).send({"error": "Internal Server Error"})
     }
 }
