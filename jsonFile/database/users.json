@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "login": "pashashavlenkov@gmail.com",
+      "pass": "pasha12345",
+      "items": [
+        {"id": 1, "text": "Покушать", "checked": false},
+        {"id": 2, "text": "Почистить зубы", "checked": false},
+        {"id": 3, "text": "Сделать дз", "checked": false},
+        {"id": 4, "text": "Сделать уровень 2.5", "checked": false},
+        {"id": 5, "text": "Купить продукты", "checked": false}
+      ]
+    },
+    {
+      "login": "noname@gmail.com",
+      "pass": "1234",
+      "items": [
+        {"id": 1, "text": "Покушать", "checked": false},
+        {"id": 2, "text": "Почистить зубы", "checked": false},
+        {"id": 3, "text": "Почитать книгу", "checked": false},
+        {"id": 4, "text": "Сделать дз", "checked": false}
+      ]
+    }
+  ]
+}
