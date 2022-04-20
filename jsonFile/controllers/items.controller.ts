@@ -21,7 +21,7 @@ export function getItems(req: Request, res: Response) {
             }
         }
     } catch(e) {
-        res.status(500).send({"error": "Internal Server Error"})
+        return res.status(500).send({"error": "Internal Server Error"})
     }
 }
 
@@ -54,7 +54,7 @@ export function addItem(req: Request, res: Response) {
         }
 
     } catch(e) {
-        res.status(500).send({"error": "Internal Server Error"})
+        return res.status(500).send({"error": "Internal Server Error"})
     }
 }
 
@@ -85,7 +85,7 @@ export function deleteItem(req: Request, res: Response) {
             }
         }
     } catch(e) {
-        res.status(500).send({"error": "Internal Server Error"})
+        return res.status(500).send({"error": "Internal Server Error"})
     }
 }
 
@@ -119,6 +119,6 @@ export function editItem(req: Request, res: Response) {
 
         res.send({"ok": true})
     } catch(e) {
-        res.status(500).send({"error": "Internal Server Error"})
+        return res.status(500).send({"error": "Internal Server Error"})
     }
 }
